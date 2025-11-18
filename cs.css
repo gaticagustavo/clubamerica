@@ -1,0 +1,365 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  color: #002b7f;
+}
+
+header {
+  background-color: #ffcc00;
+  color: #002b7f;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: #002b7f;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  text-align: center;
+  padding: 30px;
+}
+
+.imagen {
+  width: 60%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #002b7f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Sección jugadores */
+.jugadores {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.jugador img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.jugador p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Formulario */
+.formulario {
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #ffcc00;
+  color: #002b7f;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #002b7f;
+  color: #ffcc00;
+}
+
+/* ========================================
+   ESTILOS MEJORADOS PARA PÁGINA DE CONTACTO
+   ======================================== */
+
+/* Container principal de contacto */
+.contacto-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+/* Sección de información de contacto */
+.contacto-info {
+  background: linear-gradient(135deg, #002b7f 0%, #004ba8 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 43, 127, 0.3);
+}
+
+.contacto-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.contacto-descripcion {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.info-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateX(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.info-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Redes sociales */
+.redes-sociales {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid rgba(255, 204, 0, 0.3);
+}
+
+.redes-sociales h3 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.red-social {
+  background-color: #ffcc00;
+  color: #002b7f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.red-social:hover {
+  background-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+/* Sección del formulario */
+.contacto-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form h2 {
+  font-size: 28px;
+  color: #002b7f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Grupos de formulario */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #002b7f;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group select {
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Checkbox personalizado */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Botón de enviar mejorado */
+.btn-enviar {
+  width: 100%;
+  background: linear-gradient(135deg, #ffcc00 0%, #ffd700 100%);
+  color: #002b7f;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(135deg, #002b7f 0%, #004ba8 100%);
+  color: #ffcc00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 43, 127, 0.4);
+}
+
+.btn-enviar:active {
+  transform: translateY(0);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contacto-info,
+.contacto-form {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.contacto-form {
+  animation-delay: 0.2s;
+}
+
+/* Responsive Design para Contacto */
+@media (max-width: 968px) {
+  .contacto-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .contacto-info {
+    order: 2;
+  }
+  
+  .contacto-form {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacto-info,
+  .contacto-form {
+    padding: 25px;
+  }
+  
+  .contacto-info h2,
+  .contacto-form h2 {
+    font-size: 24px;
+  }
+  
+  .iconos-redes {
+    flex-direction: column;
+  }
+  
+  .red-social {
+    text-align: center;
+  }
+}
+
+/* Footer mejorado */
+footer {
+  background: linear-gradient(135deg, #002b7f 0%, #001a4d 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club América - Contacto</title>
+  <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="jugadores.html">Jugadores</a>
+      <a href="historia.html">Historia</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="principal">
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <h2>¡Contáctanos!</h2>
+        <p class="contacto-descripcion">
+          ¿Tienes alguna pregunta o comentario sobre el Club América? 
+          Nos encantaría escucharte. Completa el formulario y te responderemos 
+          lo antes posible.
+        </p>
+        
+        <div class="info-item">
+          <h3>📧 Email</h3>
+          <p>contacto@clubamerica-escolar.com</p>
+        </div>
+        
+        <div class="info-item">
+          <h3>📱 Teléfono</h3>
+          <p>+52 55 1234 5678</p>
+        </div>
+        
+        <div class="info-item">
+          <h3>📍 Ubicación</h3>
+          <p>Estadio Azteca, Ciudad de México</p>
+        </div>
+
+        <div class="redes-sociales">
+          <h3>Síguenos en:</h3>
+          <div class="iconos-redes">
+            <a href="#" class="red-social">Facebook</a>
+            <a href="#" class="red-social">Twitter</a>
+            <a href="#" class="red-social">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacto-form">
+        <h2>Envíanos un mensaje</h2>
+        <form class="formulario">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+52 55 1234 5678">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto *</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">Selecciona un asunto</option>
+              <option value="informacion">Información general</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="queja">Queja o reclamo</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto la política de privacidad y términos de uso</label>
+          </div>
+
+          <button type="submit" class="btn-enviar">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Club América - Proyecto Escolar | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
